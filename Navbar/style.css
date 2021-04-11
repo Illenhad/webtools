@@ -1,0 +1,63 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+main p {
+    width: 80%;
+    text-align: justify;
+}
+
+nav {
+    padding: 10px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .4s ease-in-out;
+}
+
+#nav-title {
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav .nav-items {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+}
+
+nav .nav-items li {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dark {
+    background-color: rgba(51, 51, 51, .9);
+    color: #f1f1f1;
+    justify-content: center;
+}
+
+.visible {
+    display: none;
+}
